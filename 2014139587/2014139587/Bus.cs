@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace _2014139587
 {
-    class Bus
+    public class Bus
     {
+        public int codBus   {get; set;}
+        public string descBus {get; set;}
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2014139587
 {
-    public class Transporte
+    public class Transporte : Servicio
     {
         List<TipoViaje> _TipoViaje;
         public  Transporte (int numViaje)
@@ -27,11 +27,12 @@ namespace _2014139587
             _Cliente = new List<Cliente>(numCliente);
             return numCliente;
         }
-      
 
-        
-
-
-
+        List<Bus> _numBus;
+        public int Transporte3(int bus)
+        {
+            _numBus = new List<Bus>(bus);
+            return bus;
+        }
     }
 }
