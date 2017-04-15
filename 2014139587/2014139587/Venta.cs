@@ -28,6 +28,16 @@ namespace _2014139587
             {
                 _Servicio.Add(new Servicio(servicio));
             }
+
         }
+        public void agregarUsuario(string NombreSet)
+        {
+            if (NombreSet.Length > 0)
+            {
+                _Cliente.Add(new Cliente(NombreSet));
+
+            }
+            else return;
+        }        
     }
 }

@@ -10,6 +10,7 @@ namespace _2014139587
     {
         public List<Bus> _Bus;
         private TipoViaje _TipoViaje;
+        private List<TipoViaje> _TipoViaje2;
         private Cliente _Cliente;
         private LugarViaje _LugarViaje;
         public List<Bus> bus
@@ -23,6 +24,10 @@ namespace _2014139587
             _Cliente = cliente;
             _LugarViaje = lugarViaje;
         }
+        public Transporte()
+        {
+            _TipoViaje2 = new List<TipoViaje>();
+        }
         public Transporte(string servicioDesc)
             : base(servicioDesc)
         { }
@@ -30,5 +35,14 @@ namespace _2014139587
         {
             _Bus = bus;
         }
+
+        public void TipoViajeSet(string tipoViajes)
+        {
+            if (tipoViajes != null)
+            {
+                _TipoViaje2.Add(new TipoViaje(tipoViajes));
+            }
+
+        }        
     }
 }

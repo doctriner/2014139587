@@ -8,6 +8,17 @@ namespace _2014139587
 {
     public class TipoViaje
     {
-        string tipoViaje { get; set; }
+        string _TipoViajeDesc;
+        public string TipoViajeDesc
+        {
+            get { return _TipoViajeDesc; }
+            set { if (value.Length > 0) _TipoViajeDesc = value; }
+        }
+
+        public TipoViaje(string tipoViaje)
+        {
+            _TipoViajeDesc = tipoViaje;
+        }
+        public TipoViaje() { }
     }
 }
