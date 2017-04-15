@@ -8,11 +8,11 @@ namespace _2014139587
 {
     public class LugarViaje
     {
-        public List<TipoLugar> _TipoLugares;
-
-        public LugarViaje(int tipLugares)
+        private TipoViaje _TipoViaje;
+        public LugarViaje(TipoViaje tipoViaje)
         {
-            _TipoLugares = new List<TipoLugar>(tipLugares);
+            _TipoViaje = tipoViaje;
         }
+        public TipoViaje lugarViaje { get { return _TipoViaje; } }
     }
 }

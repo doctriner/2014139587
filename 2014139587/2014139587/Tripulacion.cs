@@ -6,23 +6,16 @@ using System.Threading.Tasks;
 
 namespace _2014139587
 {
-    public class Tripulacion : Empleado
+    public class Tripulacion : Empleados
     {
-        public DateTime FechaContratacion { get; set; }
-
-        public void Identificarse()
+        TipoTripulacion _TipoTripulacion;
+        string TripulacionDesc { get; set; }
+        public Tripulacion(TipoTripulacion tipoTripulacion)
         {
-            Console.WriteLine("Soy un tripulante, " + "mi numero de DNI es " + this.DNI);
+            _TipoTripulacion = tipoTripulacion;
         }
 
-        public Tripulacion()
-        {
+        public Tripulacion(string empleadosid) : base(empleadosid) { }
 
-        }
-
-        public Tripulacion (string dni) : base(dni)
-        {
-
-        }
     }
 }

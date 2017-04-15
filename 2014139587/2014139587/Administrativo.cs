@@ -6,23 +6,14 @@ using System.Threading.Tasks;
 
 namespace _2014139587
 {
-    public class Administrativo : Empleado
+    public class Administrativo : Empleados
     {
-        public DateTime FechaRegistro { get; set; }
-
-        public void Identificarse()
+        string AdministrativoDesc { get; set; }
+        public Administrativo(string empleadosid)
+            : base(empleadosid)
         {
-            Console.WriteLine(" Soy un administrador, " + "mi numero de DNI es " + this.DNI);
         }
+        public Administrativo() { }
 
-        public Administrativo()
-        {
-
-        }
-
-        public Administrativo(string dni): base(dni)
-        {
-
-        }
     }
 }

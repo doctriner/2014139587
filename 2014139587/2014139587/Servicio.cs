@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace _2014139587
 {
-    public abstract class Servicio
+    public class Servicio
     {
-        public int codEncomienda {get; set; }
-        public string descEncomienda {get; set;}
-
+        public int ServicioUID { set; get; }
+        public string ServicioDESC { set; get; }
         public Servicio()
         {
         }
-
-        public Servicio (string descripcion)
+        public Servicio(string servicioDesc)
         {
-            descEncomienda = descripcion;
+            ServicioDESC = servicioDesc;
         }
-
-
-
     }
 }

@@ -8,25 +8,6 @@ namespace _2014139587
 {
     public class TipoComprobante
     {
-        public string _TipoComprob;
-
-        public string TipoComprob
-        {
-            get
-            {
-                return _TipoComprob;
-            }
-
-            set
-            {
-                if (_TipoComprob.Count() > 0)
-                    _TipoComprob = value;
-            }
-        }
-
-        public TipoComprobante ( string tipoComprob)
-        {
-            TipoComprob = tipoComprob;
-        }
+        string tipoComprovante { set; get; }
     }
 }

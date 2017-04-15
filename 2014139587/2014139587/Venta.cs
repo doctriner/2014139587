@@ -8,38 +8,26 @@ namespace _2014139587
 {
     public class Venta
     {
-        List<Administrativo> _Administrativo;
-        public Venta(int codAdmi)
-        {
-            _Administrativo = new List<Administrativo>(codAdmi);
-        }
-
-        List<Cliente> _Cliente;
-        public int Venta1(int codCli)
-        {
-            _Cliente = new List<Cliente>(codCli);
-            return codCli;
-        }
-
         List<Servicio> _Servicio;
-        public int Venta2(int codSer)
+        List<Cliente> _Cliente;
+        TipoComprobante _TipoComprovante;
+        TipoPago _TipoPago;
+        Administrativo _Administrativo;
+        public Venta()
         {
-            _Servicio = new List<Servicio>(codSer);
-            return codSer;
+            _Cliente = new List<Cliente>();
+            _TipoComprovante = new TipoComprobante();
+            _TipoComprovante = new TipoComprobante();
+            _TipoPago = new TipoPago();
+            _Administrativo = new Administrativo();
+            _Servicio = new List<Servicio>();
         }
-
-        List<TipoPago> _TipoPago;
-        public int Venta3(int codTipPag)
+        public void agregarServicio(string servicio)
         {
-            _TipoPago = new List<TipoPago>(codTipPag);
-            return codTipPag;
-        }
-
-        List<TipoComprobante> _TipoComprobante;
-        public int Venta4 (int codTipComp)
-        {
-            _TipoComprobante = new List<TipoComprobante>(codTipComp);
-            return codTipComp;
+            if (servicio.Length > 0)
+            {
+                _Servicio.Add(new Servicio(servicio));
+            }
         }
     }
 }

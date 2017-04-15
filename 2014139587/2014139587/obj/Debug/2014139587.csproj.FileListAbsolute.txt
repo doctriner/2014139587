@@ -1,1 +1,6 @@
 C:\Users\Sergio\Documents\Visual Studio 2017\Projects\2014139587\2014139587\2014139587\obj\Debug\2014139587.csprojResolveAssemblyReference.cache
+C:\Users\Sergio\Documents\Visual Studio 2017\Projects\2014139587\2014139587\2014139587\bin\Debug\2014139587.exe.config
+C:\Users\Sergio\Documents\Visual Studio 2017\Projects\2014139587\2014139587\2014139587\bin\Debug\2014139587.exe
+C:\Users\Sergio\Documents\Visual Studio 2017\Projects\2014139587\2014139587\2014139587\bin\Debug\2014139587.pdb
+C:\Users\Sergio\Documents\Visual Studio 2017\Projects\2014139587\2014139587\2014139587\obj\Debug\2014139587.exe
+C:\Users\Sergio\Documents\Visual Studio 2017\Projects\2014139587\2014139587\2014139587\obj\Debug\2014139587.pdb

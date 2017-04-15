@@ -8,28 +8,17 @@ namespace _2014139587
 {
     public class Cliente
     {
-        public int _codCliente;
-
-        public int codCliente
+        private string NombreCliente { set; get; }
+        public string nombreCliente
         {
-            get
-            {
-                return _codCliente;
-            }
-
-            set
-            {
-                if (value>0)
-                   _codCliente = value;
-            }
+            get { return NombreCliente; }
+            set { if (value.Length > 0) NombreCliente = value; }
         }
 
-        public Cliente (int codigo)
+        public Cliente(string nombre)
         {
-            codCliente = codigo;
+            NombreCliente = nombre;
         }
-
-
     }
 
 }

@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace _2014139587
 {
-    public class Empleado
+    public class Empleados
     {
-        public int EmpleadoId { get; set; }
-        
-        public string DNI { get; set; }
-
-        public Empleado()
+        string EmpleadoID { get; set; }
+        public Empleados(string empleadosid)
         {
+            EmpleadoID = empleadosid;
         }
-
-        public Empleado (string dni)
-        {
-            DNI = dni;
-        }
+        public Empleados() { }
     }
+
 }

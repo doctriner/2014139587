@@ -8,31 +8,27 @@ namespace _2014139587
 {
     public class Transporte : Servicio
     {
-        List<TipoViaje> _TipoViaje;
-        public  Transporte (int numViaje)
+        public List<Bus> _Bus;
+        private TipoViaje _TipoViaje;
+        private Cliente _Cliente;
+        private LugarViaje _LugarViaje;
+        public List<Bus> bus
         {
-            _TipoViaje = new List<TipoViaje>(numViaje);
+            get { return _Bus; }
+            set { if (value.Count > 0) _Bus = value; }
         }
-
-        List<LugarViaje> _LugarViaje;
-        public int Transporte1 (int numLugar)
+        public Transporte(TipoViaje tipoViaje, Cliente cliente, LugarViaje lugarViaje)
         {
-            _LugarViaje = new List<LugarViaje>(numLugar);
-            return numLugar;
+            _TipoViaje = tipoViaje;
+            _Cliente = cliente;
+            _LugarViaje = lugarViaje;
         }
-
-        List<Cliente> _Cliente;
-        public int Transporte2 (int numCliente)
+        public Transporte(string servicioDesc)
+            : base(servicioDesc)
+        { }
+        public Transporte(List<Bus> bus)
         {
-            _Cliente = new List<Cliente>(numCliente);
-            return numCliente;
-        }
-
-        List<Bus> _numBus;
-        public int Transporte3(int bus)
-        {
-            _numBus = new List<Bus>(bus);
-            return bus;
+            _Bus = bus;
         }
     }
 }

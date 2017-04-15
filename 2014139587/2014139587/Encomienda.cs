@@ -6,13 +6,27 @@ using System.Threading.Tasks;
 
 namespace _2014139587
 {
-    class Encomienda : Servicio
+    public class Encomienda : Servicio
     {
-        public DateTime FechaServicio  {get; set;}
+        string EncomiendaDesc { get; set; }
+        int EncomiendaID { get; set; }
+        public Bus Bus { get; set; }
 
-        public void descServicio()
+        public Encomienda()
         {
-            Console.WriteLine("La encomienda " + this.descEncomienda);
+        }
+        public Encomienda(string servicioDesc)
+            : base(servicioDesc)
+        {
+        }
+        public Encomienda(Bus bus)
+        {
+            Bus = bus;
+        }
+        public Encomienda(int encomiendaID)
+        {
+            EncomiendaID = encomiendaID;
         }
     }
+
 }
